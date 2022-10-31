@@ -24,6 +24,8 @@ public class NewsComment03
         driver.findElement(By.id("AddNewComment_CommentText")).sendKeys("News you like and this is worth sharing to you");
         driver.findElement(By.xpath("//div[@class='fieldset new-comment']/form/div[2]/button")).click();
         String result = driver.findElement(By.xpath("//div[@class='result']")).getText();
+        driver.close();
+
         System.out.println(result);
         System.out.println(timeStamp);
     }
