@@ -22,8 +22,8 @@ public class Registration01
         driver.findElement(By.id("FirstName")).sendKeys("Max"); //to add first name
         driver.findElement(By.id("LastName")).sendKeys("Maker"); // to add surname
         driver.findElement(By.id("Email")).sendKeys("Max" + timeStamp+"maker" + "@maker.co.uk"); //to fill email address
-        driver.findElement(By.id("Password")).sendKeys("Max@1"); // set a password
-        driver.findElement(By.id("ConfirmPassword")).sendKeys("Max1@1"); //reconfirm a password
+        driver.findElement(By.id("Password")).sendKeys("Max11@1"); // set a password
+        driver.findElement(By.id("ConfirmPassword")).sendKeys("Max11@1"); //reconfirm a password
         driver.findElement(By.id("register-button")).click(); // to register
         String regMsg = driver.findElement(By.className(("result"))).getText(); // to find registration confirmation message.
         driver.close(); // after task closing Chrome window.
